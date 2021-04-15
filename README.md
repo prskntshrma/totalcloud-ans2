@@ -7,6 +7,7 @@
 2. create a resource group named try in Azure. Inside it create linux and windows virtual machines.
    az ad sp create-for-rbac -n "trySP" --role Contributor --scopes /subscriptions/{replace with your subscription}/resourceGroups/try
 3. This is output something like this
+```json
 {
   "appId": "............",
   "displayName": "trySP",
@@ -14,5 +15,6 @@
   "password": "...................",
   "tenant": "...................."
 }
+```
 4. take note of appId, password, tenant and add these values in ans2.py along with subscription you used
 5. run the python script by going in to the directory of ans2.py
