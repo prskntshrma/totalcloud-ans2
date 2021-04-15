@@ -4,8 +4,10 @@
 
 # 2nd question
 1. need to perform this action first "pip install -r requirements.txt" in ans2 directory
-2. create a resource group named try in Azure. Inside it create linux and windows virtual machines.
-   az ad sp create-for-rbac -n "trySP" --role Contributor --scopes /subscriptions/{replace with your subscription}/resourceGroups/try
+2. create a resource group named try in Azure. Inside it create linux and windows virtual machines.After that we need to create service principal for our application like below
+```bash
+az ad sp create-for-rbac -n "trySP" --role Contributor --scopes /subscriptions/{replace with your subscription}/resourceGroups/try
+```
 3. This will output something like this
 ```json
 {
