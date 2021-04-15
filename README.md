@@ -18,3 +18,7 @@
 ```
 4. take note of appId, password, tenant and add these values in ans2.py along with subscription you used
 5. run the python script by going in to the directory of ans2.py
+
+# Note
+sometimes in linux machines depending on whihc python version you have, you might need to replace python command with **python3** and pip commands with **python3 -m pip**
+For instance, "pip install requests" will become **python3 -m pip install requests**
